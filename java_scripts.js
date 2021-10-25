@@ -27,3 +27,9 @@ function button(){
    var x= document.getElementById("input").value;
    document.getElementById("h1").innerHTML = "The temperature is " + toCelsius(x) + " Celsius";
 }
+
+
+function love(){
+    document.getElementById("h2").innerHTML = Math.floor(Math.random() * 101);
+    document.getElementById("h2").style.color="green";
+}
