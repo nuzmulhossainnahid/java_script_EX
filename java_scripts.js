@@ -25,5 +25,5 @@ function toCelsius(x) {
   }
 function button(){
    var x= document.getElementById("input").value;
-   document.getElementById("h1").innerHTML = toCelsius(x);
+   document.getElementById("h1").innerHTML = "The temperature is " + toCelsius(x) + " Celsius";
 }
