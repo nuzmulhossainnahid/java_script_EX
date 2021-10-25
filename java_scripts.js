@@ -30,6 +30,23 @@ function button(){
 
 
 function love(){
-    document.getElementById("h2").innerHTML = Math.floor(Math.random() * 101);
+    let y = Math.floor(Math.random() * 101);
+    document.getElementById("h2").innerHTML = y;
     document.getElementById("h2").style.color="green";
+
+   if(y<=50){
+    document.getElementById("cal").innerHTML="Not good Choice";
+    document.getElementById("cal").style.color="red";
+
+   }
+   else if(y<=80){
+    document.getElementById("cal").innerHTML="Good Choice";
+    document.getElementById("cal").style.color="blue";
+   }
+   else if(y<=100){
+    document.getElementById("cal").innerHTML="True Love";
+    document.getElementById("cal").style.color="green";
+
+   }
+
 }
